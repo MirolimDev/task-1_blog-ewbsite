@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block body %}
+	<div id="page">
+		<div class="container">
+			
+			<div id="content" class="site-content">
+				<div id="primary" class="content-area column full">
+					<main id="main" class="site-main" role="main">
+					<p class="woocommerce-result-count">
+						Showing 1–8 of 12 results
+					</p>
+					<form class="woocommerce-ordering" method="get">
+						<select name="orderby" class="orderby">
+							<option value="menu_order" selected="selected">Default sorting</option>
+							<option value="popularity">Sort by popularity</option>
+							<option value="rating">Sort by average rating</option>
+							<option value="date">Sort by newness</option>
+							<option value="price">Sort by price: low to high</option>
+							<option value="price-desc">Sort by price: high to low</option>
+						</select>
+					</form>
+					<ul class="products">
+					
+						<li class="first product">
+						<a href="{% url 'shop-single' %}">
+						<span class="onsale">Sale!</span>
+						<img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j4-520x520.jpg" alt="">
+						<h3>Cool Fedora</h3>
+						<span class="price"><span class="amount">$34.00</span></span>
+						</a><a href="#" class="button">Add to cart</a>
+						</li>
+
+						<li class="product">
+						<a href="{% url 'shop-single' %}">
+						<img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j10-520x780-520x600.jpg" alt="">
+						<h3>Beige Blouse</h3>
+						<span class="price"><span class="amount">$66.00</span></span>
+						</a><a href="#" class="button">Add to cart</a>
+						</li>
+						
+						<li class="product">
+						<a href="{% url 'shop-single' %}">
+						<img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j1-520x780-520x600.jpg" alt="">
+						<h3>Black Jacket</h3>
+						<span class="price"><span class="amount">$125.00</span></span>
+						</a><a href="#" class="button">Add to cart</a>
+						</li>
+						
+						<li class="last product">
+						<a href="{% url 'shop-single' %}">
+						<img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j9-520x780-520x600.jpg" alt="">
+						<h3>Brown Jacket</h3>
+						<span class="price"><span class="amount">$28.00</span></span>
+						</a><a href="#" class="button">Add to cart</a>
+						</li>
+						
+						<li class="first product">
+						<a href="{% url 'shop-single' %}">
+						<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fdesignstore7_24%2Famazon-product-listing-image-infographic%2F&psig=AOvVaw0qhybnEH1EP326FTeH1m_K&ust=1629497728298000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjylpyOvvICFQAAAAAdAAAAABAI" alt="">
+						<h3>Gray Blouse</h3>
+						<span class="price"><span class="amount">$15.00</span></span>
+						</a><a href="#" class="button">Add to cart</a>
+						</li>
+						
+						<li class="product">
+						<a href="{% url 'shop-single' %}">
+						<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fsmsh-0-778169-juc1ugur1qwqqqo4.stackpathdns.com%2F1545644%2Fwp-content%2Fuploads%2F2016%2F08%2FImageAttributes.png%3Flossy%3D0%26strip%3D1%26webp%3D1&imgrefurl=https%3A%2F%2Fsellics.com%2Fblog-how-to-optimize-your-amazon-product-listing-improve-the-ranking-of-your-amazon-product-page%2F&tbnid=QjpIyPvGLgXeMM&vet=10CA8QxiAoA2oXChMImPKWnI6-8gIVAAAAAB0AAAAAEAY..i&docid=hBZiYHKbCZGcfM&w=1024&h=768&itg=1&q=amazon%20product%27s%20pictures&ved=0CA8QxiAoA2oXChMImPKWnI6-8gIVAAAAAB0AAAAAEAY" alt="">
+						<h3>Male Bag</h3>
+						<span class="price"><span class="amount">$16.00</span></span>
+						</a><a href="#" class="button">Add to cart</a>
+						</li>
+						
+						<li class="product">
+						<a href="{% url 'shop-single' %}">
+						<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2F46ba123xc93a357lc11tqhds-wpengine.netdna-ssl.com%2Fwp-content%2Fuploads%2F2019%2F09%2Famazon-alexa-event-sept-2019.jpg&imgrefurl=https%3A%2F%2Fvoicebot.ai%2F2019%2F09%2F25%2F16-new-products-amazon-introduced-at-todays-launch-event-earbuds-glasses-a-ring-and-more%2F&tbnid=BE_XpuQZnqCoUM&vet=12ahUKEwjyl6qbjr7yAhVC_CoKHfTFBboQMygBegUIARC2AQ..i&docid=8fzBpqtf8SVrIM&w=850&h=384&q=amazon%20product%27s%20pictures&ved=2ahUKEwjyl6qbjr7yAhVC_CoKHfTFBboQMygBegUIARC2AQ" alt="">
+						<h3>Hugo Jeans</h3>
+						<span class="price"><span class="amount">$36.00</span></span>
+						</a><a href="#" class="button">Add to cart</a>
+						</li>
+						
+						<li class="last product">
+						<a href="{% url 'shop-single' %}">
+						<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.junglescout.com%2Fwp-content%2Fuploads%2F2021%2F01%2Fproduct-photo-quiz.png&imgrefurl=https%3A%2F%2Fwww.junglescout.com%2Fblog%2Famazon-product-images%2F&tbnid=g_U5fzGk0zxZEM&vet=12ahUKEwjyl6qbjr7yAhVC_CoKHfTFBboQMygAegUIARC0AQ..i&docid=MjmP3JCTE6c_0M&w=1178&h=440&q=amazon%20product%27s%20pictures&ved=2ahUKEwjyl6qbjr7yAhVC_CoKHfTFBboQMygAegUIARC0AQ" alt="">
+						<h3>Male T-Shirt</h3>
+						<span class="price"><span class="amount">$49.00</span></span>
+						</a><a href="#" class="button">Add to cart</a>
+						</li>
+						
+					</ul>
+					<nav class="woocommerce-pagination">
+					<ul class="page-numbers">
+						<li><span class="page-numbers current">1</span></li>
+						<li><a class="page-numbers" href="#">2</a></li>
+						<li><a class="next page-numbers" href="#">→</a></li>
+					</ul>
+					</nav>
+					</main>
+					<!-- #main -->
+				</div>
+				<!-- #primary -->
+			</div>
+			<!-- #content -->
+		</div>
+		<!-- .container -->
+		
+	</div>
+{% endblock body %}
